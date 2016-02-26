@@ -1,0 +1,21 @@
+{
+	"FileVersion" : 3,
+	
+	"FriendlyName" : "G27 Plugin",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "iNFINITE Production",
+	"CreatedByURL" : "http://www.infiniteproduction.eu",
+	"EngineVersion" : "4.6.0",
+	"Description" : "Plugin to enable use of Logitech G27 Steering Wheel. Might also work with other wheels.",
+	"Category" : "Input",
+	"EnabledByDefault" : true,
+	
+	"Modules" :
+	[
+		{
+			"Name" : "G27Plugin",
+			"Type" : "Runtime"
+		}
+	]
+}
