@@ -1,11 +1,3 @@
-/*
-*
-* Copyright (C) <2014> <w-hs - cglab projects>
-* All rights reserved.
-*
-* This software may be modified and distributed under the terms
-* of the BSD license.  See the LICENSE file for details.
-*/
 
 //////////////////////////////////////////////////////////////////////
 //
@@ -252,12 +244,31 @@ bool DeviceSDL::getDeviceState(FJoystickState &InputData, FJoystickInfo &Joystic
 	float scaledValue = 0;
 	for (int iAxes = 0; iAxes < numAxis; iAxes++) {		
 		int rawValue = SDL_JoystickGetAxis(m_Joysticks[InputDeviceIndex], iAxes);		
+		
+		
+		
+		if(iAxes == 1 || iAxes == 2 || iAxes == 3){
+			
+			rawValue = rawValue + 32768;
+			
+			scaledValue = (rawValue) / 32767.0;
+			
+		InputData.AxisArray.Add(scaledValue);
+		}
+		else{
+		//SCALING FOR NON-PEDAL VALUES
 		if (rawValue < 0) {
 			scaledValue = (rawValue) / 32768.0;
 		} else {
 			scaledValue = (rawValue) / 32767.0;
 		}
 		InputData.AxisArray.Add(scaledValue);
+		
+		}
+		
+		
+		}
+		
 	}
 
 	int numHats = InputData.NumberOfHats = SDL_JoystickNumHats(m_Joysticks[InputDeviceIndex]);
