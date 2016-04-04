@@ -9,3 +9,4 @@ Saved
 *.xcodeproj
 Plugins/*
 my_data/*
+Build/Receipts/VirtualSimulatorEditor-Win64-Development.target.xml
