@@ -10,9 +10,9 @@
     <BuildProduct Path="$(ProjectDir)\Plugins\JoystickPlugin\Binaries\Win64\UE4Editor-JoystickPlugin-7416.dll" Type="DynamicLibrary" />
     <BuildProduct Path="$(ProjectDir)\Plugins\JoystickPlugin\Binaries\Win64\UE4Editor-JoystickPlugin-7416.pdb" Type="SymbolFile" />
     <BuildProduct Path="$(ProjectDir)\Plugins\JoystickPlugin\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-JoystickPlugin-7416.lib" Type="ImportLibrary" />
-    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-VirtualSimulator-5172.dll" Type="DynamicLibrary" />
-    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-VirtualSimulator-5172.pdb" Type="SymbolFile" />
-    <BuildProduct Path="$(ProjectDir)\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-VirtualSimulator-5172.lib" Type="ImportLibrary" />
+    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-VirtualSimulator.dll" Type="DynamicLibrary" />
+    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-VirtualSimulator.pdb" Type="SymbolFile" />
+    <BuildProduct Path="$(ProjectDir)\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-VirtualSimulator.lib" Type="ImportLibrary" />
   </BuildProducts>
   <RuntimeDependencies />
   <bRequireDependenciesToExist>true</bRequireDependenciesToExist>
