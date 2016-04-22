@@ -7,6 +7,8 @@
     <Property Name="Precompile" Value="False" />
   </Properties>
   <BuildProducts>
+    <BuildProduct Path="$(ProjectDir)/Plugins/VaRestPlugin/Binaries/Mac/UE4Editor-VaRestPlugin.dylib" Type="DynamicLibrary" />
+    <BuildProduct Path="$(ProjectDir)/Plugins/VaRestPlugin/Binaries/Mac/UE4Editor-VaRestPlugin.dsym" Type="SymbolFile" />
     <BuildProduct Path="$(ProjectDir)/Binaries/Mac/UE4Editor-VirtualSimulator.dylib" Type="DynamicLibrary" />
     <BuildProduct Path="$(ProjectDir)/Binaries/Mac/UE4Editor-VirtualSimulator.dsym" Type="SymbolFile" />
   </BuildProducts>
